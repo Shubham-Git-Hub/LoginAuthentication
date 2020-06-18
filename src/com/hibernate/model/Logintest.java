@@ -16,7 +16,7 @@ public class Logintest implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name="USERID")
+	@Column(name = "USERID")
 	private int userid;
 
 	@Column(name = "USERNAME")
@@ -45,8 +45,6 @@ public class Logintest implements Serializable {
 		return userid;
 	}
 
-	public void setUserid(int userid) {
-		this.userid = userid;
-	}
+	
 	
 }

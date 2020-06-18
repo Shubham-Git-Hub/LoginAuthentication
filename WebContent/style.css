@@ -54,3 +54,11 @@ body{
   cursor: pointer;
   margin: 12px 0;
 }
+.Info{
+	width: 280px;
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: rgb(94, 1, 1);
+}
