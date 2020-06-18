@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "logintest")
-public class logintest implements Serializable {
+public class Logintest implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
@@ -40,4 +40,13 @@ public class logintest implements Serializable {
 	public void setPassword(String password) {
 		Password = password;
 	}
+
+	public int getUserid() {
+		return userid;
+	}
+
+	public void setUserid(int userid) {
+		this.userid = userid;
+	}
+	
 }
