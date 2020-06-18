@@ -7,8 +7,7 @@ import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
 import org.hibernate.cfg.Environment;
 import org.hibernate.service.ServiceRegistry;
-
-import com.hibernate.model.User;
+import com.hibernate.model.logintest;
 
 public class HibernateUtil {
 	private static SessionFactory sessionFactory;
@@ -32,7 +31,7 @@ public class HibernateUtil {
 				settings.put(Environment.HBM2DDL_AUTO, "update");
 
 				configuration.setProperties(settings);
-				configuration.addAnnotatedClass(User.class);
+				configuration.addAnnotatedClass(logintest.class);
 
 				ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
 						.applySettings(configuration.getProperties()).build();

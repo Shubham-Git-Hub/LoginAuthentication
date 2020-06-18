@@ -11,12 +11,13 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "logintest")
-public class User implements Serializable {
+public class logintest implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int USERID;
+	@Column(name="USERID")
+	private int userid;
 
 	@Column(name = "USERNAME")
 	private String Username;
