@@ -1,4 +1,4 @@
-# LoginAuthentication
+# LoginAuthentication & Registration
 Login Authentication & Registration
 Using Hibernate.
 MySQL table:-
